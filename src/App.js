@@ -50,23 +50,7 @@ const App = () => {
 
   return (
     <div>
-      <UserCard
-        user={{
-          username: "LeeFarnell",
-          bio: "31 | Coding Boot Camp Student | Looking to become a full stack developer.\r\n\r\nEmail Me: leefarnell@mac.com",
-          name: "Lee Farnell",
-          githubUrl: "https://github.com/LeeFarnell",
-          profileImageUrl:
-            "https://avatars.githubusercontent.com/u/77978817?v=4",
-          followers: 17,
-          following: 25,
-          company: null,
-          email: null,
-          twitterUsername: "leefarnell",
-          publicGists: 1,
-          publicRepos: 15,
-        }}
-      />
+      <UserCard user={data.user} />
       <Followers followers={data.followers} />
     </div>
   );
